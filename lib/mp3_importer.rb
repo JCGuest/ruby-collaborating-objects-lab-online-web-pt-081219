@@ -11,6 +11,6 @@ def files
 end
 
 def inport
-  files.each {file| Song.new()
+  files.each {|file| Song.new(file) }
 end
 end
