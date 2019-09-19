@@ -8,7 +8,9 @@ def initialize(name)
 @@all << self
 end
 
-
+def new_by_filename(name)
+  self.new(name)
+end
 
 def self.all
   @@all
