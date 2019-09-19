@@ -7,7 +7,7 @@ def initialize(path)
 end
 
 def files
-  
+  Dir["/path/to/search/**/*.rb"]
 end
 
 end
