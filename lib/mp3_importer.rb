@@ -7,7 +7,7 @@ def initialize(path)
 end
 
 def files
-  Dir["/path/to/search/**/*.rb"]
+ @files ||=  Dir["/path/to/search/**/*.mp3"].collect{ |f| f.gsub("#{path}/", "") }
 end
 
 end
