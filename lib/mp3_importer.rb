@@ -10,7 +10,7 @@ def files
  @files ||= Dir.glob("#{@path}/*.mp3").collect{ |f| f.gsub("#{@path}/", "") }
 end
 
-def inport
+def import
   files.each {|file| Song.new(file) }
 end
 end
