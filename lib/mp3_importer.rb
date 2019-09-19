@@ -1,15 +1,15 @@
 class MP3Importer
   
 attr_accessor :path
-@@size = []
+@@all = []
 
 def initialize(path)
   @path = path
-  @@size << self
+  @@all << self
 end
 
 def files
-  @@size
+  @@all
 end
 
 end
